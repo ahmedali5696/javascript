@@ -1,2 +1,2 @@
 # javascript
-My js apps i coded without any library or framwork.
+JS apps i coded without any library or framwork.
