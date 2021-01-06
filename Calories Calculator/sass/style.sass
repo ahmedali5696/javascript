@@ -1,0 +1,43 @@
+// General //////
+/////////////////
+$i: !important
+
+h1,h2,h3
+  font-family: 'Raleway', sans-serif
+
+input:focus,
+textarea:focus,
+button:focus
+  -webkit-box-shadow: none $i
+  box-shadow: none $i
+
+a:hover
+  text-decoration: none
+
+// Adding Meal //////
+////////////////////
+.adding-meal
+  form
+    width: 100%
+  h2
+    font-weight: 300
+.input-g
+  label
+    font-size: 14px 
+  input
+    border-bottom: 1px solid #000 $i
+    transition: all .2s linear
+    &::placeholder
+      opacity: .5
+    &:focus
+      border-bottom: 1px solid #15a52d8f $i
+      transition: all .2s linear
+
+// Items Calories //////
+/////////////
+.foods-list
+  li
+    i
+      color: #15a52d8f
+      cursor: pointer
+        

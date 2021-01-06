@@ -1,0 +1,45 @@
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  box-shadow: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.adding-meal form {
+  width: 100%;
+}
+
+.adding-meal h2 {
+  font-weight: 300;
+}
+
+.input-g label {
+  font-size: 14px;
+}
+
+.input-g input {
+  border-bottom: 1px solid #000 !important;
+  transition: all .2s linear;
+}
+
+.input-g input::placeholder {
+  opacity: .5;
+}
+
+.input-g input:focus {
+  border-bottom: 1px solid #15a52d8f !important;
+  transition: all .2s linear;
+}
+
+.foods-list li i {
+  color: #15a52d8f;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

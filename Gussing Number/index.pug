@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Number Guesser
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900')
+    link(rel='stylesheet' href='css/font-awesome.min.css')
+    link(rel='stylesheet' href='css/style.css')
+
+  body
+    .container
+      section.guess-inputs
+        h1 Number Guesser
+        p Guess a number between 
+          span.min-num 
+          .
+            to 
+          span.max-num 
+        #game
+          .form-group
+            input#guess(type="number" name="guess" placeholder="Enter your guess")
+          p.massege
+          button#play.btn Play
+
+    script(src='js/script.js')

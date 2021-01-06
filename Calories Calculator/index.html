@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracalorie</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,900">
+  </head>
+  <body>
+    <nav class="navbar bg-primary p-0 shadow mb-5">
+      <div class="container"><a class="navbar-brand text-white m-auto" href="#">
+          <h1 class="h2">Tracalorie</h1></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button class="btn btn-info text-white px-4 py-1" id="clear">Clear All</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="adding-food m-4">
+      <div class="container shadow p-3">
+        <div class="row">
+          <h2 class="h3">Add meal / Food item</h2>
+          <div class="input-g col-sm-6 col-xs mb-3">
+            <label class="form-label" for="food">Meal</label>
+            <input class="form-control border-0 rounded-0 px-0" id="name" type="text" placeholder="Add Item">
+          </div>
+          <div class="input-g col-sm-6 col-xs mb-4">
+            <label class="form-label" for="claories">Calories</label>
+            <input class="form-control border-0 rounded-0 px-0" id="calories" type="number" placeholder="Add Calories">
+          </div>
+          <div class="add-btn">
+            <button class="btn btn-primary shadow" id="add"><i class="fa fa-plus"></i> Add Meal</button>
+          </div>
+          <div class="edit-btns d-none">
+            <button class="btn btn-warning shadow text-light" id="update"><i class="fa fa-pencil-square-o"></i> Update Meal</button>
+            <button class="btn btn-danger shadow" id="delete"><i class="fa fa-times"></i> Delete Meal</button>
+            <button class="btn btn-secondary shadow float-end" id="back"><i class="fa fa-arrow-circle-left"></i> Back</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="items-calories">
+      <div class="container">
+        <div class="row">
+          <h3 class="h1 text-center border-bottom pb-3 m-0">Total Calories: <span id="t-cal">0</span></h3>
+          <ul class="foods-list list-unstyled" id="foods-list"></ul>
+        </div>
+      </div>
+    </section>
+    <script src="js/librarys/bootstrap.bundle.min.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/items.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

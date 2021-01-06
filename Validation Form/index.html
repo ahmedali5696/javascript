@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+  <title>Validation</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- Container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto mt-5">
+          <h1>User Form</h1>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+              <p class="invalid-feedback" id="name-feedback">Pls put ur fullname with uppercase 1st char </p>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Email">
+              <p class="invalid-feedback" id="email-feedback">Wrong email format</p>
+            </div>
+            <div class="form-group">
+              <label for="zip">Zipcode</label>
+              <input type="text" class="form-control" id="zip" placeholder="Zipcode">
+              <p class="invalid-feedback" id="zip-feedback">Zipcode must be 5 or 6 numbers</p>
+            </div>
+            <div class="form-group">
+              <label for="number">Phone numper</label>
+              <input type="text" class="form-control" id="number" placeholder="Phone numper">
+              <p class="invalid-feedback" id="phone-feedback">Phone number must start with +2 and 11 num.</p>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block" id="btn">
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5 p-3 text-center bg-light">
+    Validation form - &copy;
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>

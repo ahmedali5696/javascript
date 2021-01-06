@@ -1,0 +1,58 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Tracalorie
+    link(rel='stylesheet' href='css/bootstrap.min.css')
+    link(rel='stylesheet' href='css/font-awesome.min.css')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:300,400,900')
+
+  body
+    nav.navbar(class='bg-primary p-0 shadow mb-5')
+      .container
+        a(class='navbar-brand text-white m-auto' href='#')
+          h1.h2 Tracalorie
+        ul(class='navbar-nav')
+          li.nav-item
+            button#clear(class='btn btn-info text-white px-4 py-1') Clear All
+
+    main.adding-food(class='m-4')
+      .container(class='shadow p-3')
+        .row
+          h2.h3 Add meal / Food item
+          div.input-g(class='col-sm-6 col-xs mb-3')
+            label(for='food' class='form-label') Meal
+            input(id='name' type='text' class='form-control border-0 rounded-0 px-0' placeholder='Add Item')
+          div.input-g(class='col-sm-6 col-xs mb-4')
+            label(for='claories' class='form-label') Calories
+            input(id='calories' type='number' class='form-control border-0 rounded-0 px-0' placeholder='Add Calories')
+          .add-btn
+            button#add(class='btn btn-primary shadow')
+              i(class='fa fa-plus')
+              |  Add Meal
+          .edit-btns(class='d-none')
+            button#update(class='btn btn-warning shadow text-light')
+              i(class='fa fa-pencil-square-o')
+              |  Update Meal
+            button#delete(class='btn btn-danger shadow')
+              i(class='fa fa-times')
+              |  Delete Meal
+            button#back(class='btn btn-secondary shadow float-end')
+              i(class='fa fa-arrow-circle-left')
+              |  Back
+
+    section.items-calories
+      .container
+        .row
+          h3.h1(class='text-center border-bottom pb-3 m-0') Total Calories: 
+            span#t-cal 0
+          ul#foods-list(class='foods-list list-unstyled')
+
+    script(src='js/librarys/bootstrap.bundle.min.js')
+    script(src='js/storage.js')
+    script(src='js/items.js')
+    script(src='js/app.js')
