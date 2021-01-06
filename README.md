@@ -1,2 +1,2 @@
 # javascript
-JS apps i builded it without any library or framwork.
+JS apps i builded it without any library or framework.
