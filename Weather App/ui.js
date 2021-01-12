@@ -17,6 +17,7 @@ class UI {
         this.description.textContent = weather.weather[0].description;
         this.description.style.textTransform = 'capitalize';
         this.temp.textContent = weather.main.temp + ' C';
+        this.icon.setAttribute('src', `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
         this.hum.textContent = `Relative Humidity: ${weather.main.humidity}%`;
         this.feelLike.textContent = `Feels Like: ${weather.main.feels_like} C`;
         this.wind.textContent = `Wind Speed: ${weather.wind.speed}m/s`;
