@@ -1,5 +1,4 @@
 const html =  require('./index.pug');
-import './index.pug';
 
 const data = {
   firstName: 'Ahemd',
