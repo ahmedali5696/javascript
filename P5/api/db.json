@@ -1,0 +1,14 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "Gener": "Action",
+      "Count": 3
+    },
+    {
+      "id": 2,
+      "Gener": "Comedy",
+      "Count": 5
+    }
+  ]
+}
