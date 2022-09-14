@@ -1,0 +1,118 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none
+}
+
+/* Main */
+.card {
+    margin: .5rem 0 1rem 0;
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px #ccc,
+                 0px 0px 1px #ccc;
+}
+
+h4 {
+    font-weight: 300
+}
+
+input {
+    padding-left: 0 !important;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #a0a0a0;
+    background: transparent;
+    z-index: 1;
+}
+
+input:focus {
+    border-bottom: 1px solid #16867b;
+    transition: .5s ease-out;
+}
+
+button {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    text-transform: uppercase
+}
+
+section {
+    margin: 20px 0
+}
+
+/* Card Content */
+.card-content .form-content {
+    position: relative;
+}
+
+.card-content .form-content label {
+    position: absolute;
+    bottom: 13px;
+    left: 5px;
+    color: #ccc;
+    z-index: 0;
+    transition: .2s ease-in-out
+}
+
+.has-data label {
+    bottom: 35px !important;
+    left: 0px !important;
+    font-size: 12px !important;
+    transition: .2s ease-in-out !important
+}
+
+.card-content form button {
+    background-color: #26a69a;
+    transition: .2s ease-out;
+}
+
+.card-content form button:hover {
+    background-color: #35c7ba;
+}
+
+/* Card Action */
+.card-action h4 {
+    margin-bottom: 30px
+}
+
+.card-action .form {
+    position: relative;
+}
+
+.card-content .form-action {
+    position: relative;
+}
+
+.card-action .form button {
+    background-color: #000;
+}
+
+.card-action .form-action label {
+    position: absolute;
+    bottom: 51px;
+    left: 8px;
+    color: #ccc;
+    z-index: 0;
+    transition: .2s ease-in-out
+}
+
+.card-action ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-action ul li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 7px 0;
+}

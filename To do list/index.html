@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task list</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <!-- Header -->
+          <header>
+            <h4>Task list</h4>
+          </header>
+
+          <!-- Add task section -->
+          <section class="card-content">
+
+            <form id="task-form">
+              <div class="form form-content">
+                <input type="text" name="task" id="task" class="col 12">
+                <label>New Task</label>
+
+              </div>
+              <button class="btn add-task">Add task</button>
+            </form>
+
+          </section>
+          <!-- Tasks section -->
+          <section class="card-action">
+            <h4>Tasks</h4>
+            <div class="form form-action">
+              <input type="text" name="filter" id="filter" class="col 12">
+              <label>Filter Tasks</label>
+              <button class="btn clear">Clear Tasks</button>
+            </div>
+            <ul class="list-items"></ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
