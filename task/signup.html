@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/signup.css">
+  <script src="./js/index.js" defer></script>
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <main class="sign main flex">
+    <div class="container flex">
+
+      <div class="sign__img img">
+        <img src="./asset/img/Image Placeholder 2.png" alt="img">
+      </div>
+
+      <div class="sign__form">
+        <h1>Create Account</h1>
+        <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+
+        <form id="my-form">
+          <div class="input-group flex">
+            <label for="username"><img src="./asset/img/User.png" alt="user icon"></label>
+            <input placeholder="Username" type="text" name="username" id="username">
+          </div>
+          <p class="error" id="user-error">Password must be between 5 to 15 characters<br> only letters and numbersand
+            no numbers at begin or ending</p>
+
+          <div class="input-group flex">
+            <label for="email"><img src="./asset/img/email.png" alt="email icon"></label>
+            <input placeholder="Email" type="email" name="email" id="email">
+          </div>
+          <p class="error" id="email-error">Wrong format</p>
+
+          <div class="input-group flex">
+            <label for="password"><img src="./asset/img/password.png" alt="Password Icon"></label>
+            <input placeholder="Password" type="password" name="password" id="password">
+          </div>
+          <p class="error" id="password-error">Password must contain at least 8 characters</p>
+
+          <div class="input-group flex">
+            <label for="confirm-password"><img src="./asset/img/password.png" alt="Password Icon"></label>
+            <input placeholder="Confirm Password" type="password" name="confirm-password" id="confirm-password">
+          </div>
+          <p class="error" id="cpass-error">Not matching with the password</p>
+
+          <button type="submit" id="submit" disabled>Sign Up</button>
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>

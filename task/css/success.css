@@ -1,0 +1,9 @@
+.success__msg {
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .success__msg {
+    text-align: center;
+  }
+}
