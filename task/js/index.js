@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 // Init Validation patterns
 const username = /^[A-Za-z]{1,}[0-9]{1,}[A-Za-z]{1,}$/,
   email = /\w@\w+\.\w{2,5}$/i,
