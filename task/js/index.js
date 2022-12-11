@@ -87,17 +87,24 @@ function validateConfirm() {
 
 function validateForm(e) {
   e.preventDefault()
- const emptyField = []
 
-  for (const input of e.target) {
-    if (input.value === '' && input.id !== 'submit') {
-      emptyField.push(input)
-    }
-  }
+  fetch('https://goldblv.com/api/hiring/tasks/register', {
+    method: 'POST',
+    body: JSON.stringify({
+      username: usernameInput.value,
+      email: emailInput.value,
+      password: passwordInput.value,
+      password_confirmation: confirmInput.value
+    }),
+    headers: { 'Content-Type': 'application/json' }
+  }).then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.log(err))
 
-  if (emptyField.length === 0) {
-    window.location.href = `/resume/projects/task/success.html`
-  }
+
+  // if (emptyField.length === 0) {
+  //   window.location.href = `resume/projects/task/success.html`
+  // }
 }
 
 
