@@ -96,7 +96,7 @@ function validateForm(e) {
   }
 
   if (emptyField.length === 0) {
-    window.location.href = `/success.html`
+    window.location.href = `/resume/projects/task/success.html`
   }
 }
 
